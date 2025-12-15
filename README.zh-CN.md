@@ -1,6 +1,6 @@
 # 力扣（LeetCode）题解
 
-这个仓库包含了我的力扣题解，主要使用 Go 语言实现，部分题目使用 TypeScript 解答。
+这个仓库包含了我的力扣题解，目前**主要使用 TypeScript 和 Rust** 实现。原先的 Go 目录已经**不再维护（废弃）**，保留仅作历史参考。
 
 MD Version: [CN](./README.zh-CN.md) | [EN](./README.md)
 
@@ -8,14 +8,16 @@ MD Version: [CN](./README.zh-CN.md) | [EN](./README.md)
 
 ```
 leetcode-ws/
-├── golang/     # Go 语言题解
-└── typescript/ # TypeScript 题解
+├── golang/     # 早期的 Go 语言题解（已废弃，不再维护）
+├── rust/       # 使用 Rust 实现的题解
+├── typescript/ # 使用 TypeScript 实现的题解
+└── weekly/     # 每周赛 / 双周赛等周赛题目的整理与实现
 ```
 
 ## 使用的编程语言
 
-- **主要语言**: Go
-- **次要语言**: TypeScript
+- **主要语言**: TypeScript, Rust
+- **已废弃目录**: Go（`golang/` 目录不再新增题解，仅保留历史代码）
 
 ## 解题文件格式
 
@@ -24,6 +26,7 @@ leetcode-ws/
 
 例如：
 - `88.merge-sorted-array.go`
+- `2110.number-of-smooth-descent-periods-of-a-stock.rs`
 - `3405.count-the-number-of-arrays-with-k-matching-adjacent-elements.ts`
 
 ## 贡献
@@ -32,4 +35,4 @@ leetcode-ws/
 
 ## 开源协议
 
-本项目采用 MIT 协议开源。 
+本项目采用 MIT 协议开源。
