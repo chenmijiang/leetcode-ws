@@ -8,6 +8,10 @@
       "folder": "typescript",
       "filename": "${id}.${kebab-case-name}.${ext}"
     },
+    "rust": {
+      "folder": "rust",
+      "filename": "${id}.${kebab-case-name}.${ext}"
+    },
     "default": {
       "folder": "default",
       "filename": "${id}.${kebab-case-name}.${ext}"
@@ -21,10 +25,4 @@
     "chenmijiang"
   ],
   "chat.commandCenter.enabled": false,
-  "cursor.cpp.disabledLanguages": [
-    "golang",
-    "typescript",
-    "markdown",
-    "plaintext"
-  ]
 }
