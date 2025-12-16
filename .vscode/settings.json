@@ -9,7 +9,7 @@
       "filename": "${id}.${kebab-case-name}.${ext}"
     },
     "rust": {
-      "folder": "rust",
+      "folder": "rust/src/solutions",
       "filename": "${id}.${kebab-case-name}.${ext}"
     },
     "default": {
