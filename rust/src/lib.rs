@@ -8,3 +8,6 @@ pub mod valid_sudoku;
 
 #[path = "solutions/2110.number-of-smooth-descent-periods-of-a-stock.rs"]
 pub mod number_of_smooth_descent_periods;
+
+#[path = "solutions/54.spiral-matrix.rs"]
+pub mod spiral_matrix;

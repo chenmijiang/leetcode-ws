@@ -52,39 +52,40 @@ function spiralOrder(matrix: number[][]): number[] {
   const n = matrix[0].length;
   const res: number[] = [];
 
-  let top = 0,
-    bottom = m - 1;
-  let left = 0,
-    right = n - 1;
+  // 方向数组：右、下、左、上（顺时针）
+  const dirs = [
+    [0, 1],
+    [1, 0],
+    [0, -1],
+    [-1, 0],
+  ];
+  let dirIdx = 0;
+  let row = 0,
+    col = 0;
 
-  while (top <= bottom && left <= right) {
-    // 从左到右遍历上边界
-    for (let j = left; j <= right; j++) {
-      res.push(matrix[top][j]);
-    }
-    top++;
+  for (let i = 0; i < m * n; i++) {
+    res.push(matrix[row][col]);
+    // 将访问过的元素标记为 101（超出范围 -100~100）
+    matrix[row][col] = 101;
 
-    // 从上到下遍历右边界
-    for (let i = top; i <= bottom; i++) {
-      res.push(matrix[i][right]);
-    }
-    right--;
+    // 计算下一个位置
+    const nextRow = row + dirs[dirIdx][0];
+    const nextCol = col + dirs[dirIdx][1];
 
-    // 从右到左遍历下边界（需要检查是否还有行）
-    if (top <= bottom) {
-      for (let j = right; j >= left; j--) {
-        res.push(matrix[bottom][j]);
-      }
-      bottom--;
+    // 如果越界或已访问（值为101），则顺时针转向
+    if (
+      nextRow < 0 ||
+      nextRow >= m ||
+      nextCol < 0 ||
+      nextCol >= n ||
+      matrix[nextRow][nextCol] === 101
+    ) {
+      dirIdx = (dirIdx + 1) % 4;
     }
 
-    // 从下到上遍历左边界（需要检查是否还有列）
-    if (left <= right) {
-      for (let i = bottom; i >= top; i--) {
-        res.push(matrix[i][left]);
-      }
-      left++;
-    }
+    // 移动到下一个位置
+    row += dirs[dirIdx][0];
+    col += dirs[dirIdx][1];
   }
 
   return res;
