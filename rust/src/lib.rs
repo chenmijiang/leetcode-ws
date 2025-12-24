@@ -11,3 +11,6 @@ pub mod number_of_smooth_descent_periods;
 
 #[path = "solutions/54.spiral-matrix.rs"]
 pub mod spiral_matrix;
+
+#[path = "solutions/3074.apple-redistribution-into-boxes.rs"]
+pub mod apple_redistribution_into_boxes;
