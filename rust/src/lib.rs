@@ -14,3 +14,6 @@ pub mod spiral_matrix;
 
 #[path = "solutions/3074.apple-redistribution-into-boxes.rs"]
 pub mod apple_redistribution_into_boxes;
+
+#[path = "solutions/3075.maximize-happiness-of-selected-children.rs"]
+pub mod maximize_happiness_of_selected_children;
