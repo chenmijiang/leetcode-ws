@@ -17,3 +17,6 @@ pub mod apple_redistribution_into_boxes;
 
 #[path = "solutions/3075.maximize-happiness-of-selected-children.rs"]
 pub mod maximize_happiness_of_selected_children;
+
+#[path = "solutions/2483.minimum-penalty-for-a-shop.rs"]
+pub mod minimum_penalty_for_a_shop;
