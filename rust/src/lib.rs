@@ -20,3 +20,6 @@ pub mod maximize_happiness_of_selected_children;
 
 #[path = "solutions/2483.minimum-penalty-for-a-shop.rs"]
 pub mod minimum_penalty_for_a_shop;
+
+#[path = "solutions/1390.four-divisors.rs"]
+pub mod four_divisors;
